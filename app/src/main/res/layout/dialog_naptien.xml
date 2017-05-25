@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bạn Muốn Nạp Bao Nhiêu?"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_red_light"/>
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/rd5000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="5000" />
+
+            <RadioButton
+                android:id="@+id/rd10000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10000" />
+
+            <RadioButton
+                android:id="@+id/rd15000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15000" />
+        </RadioGroup>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnnap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nạp Tiền"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

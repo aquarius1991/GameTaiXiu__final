@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/ban">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/backgroundframe">
+
+                <TextView
+                    android:id="@+id/tvTien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="400"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/backgroundview"/>
+
+            </FrameLayout>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/coin" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <FrameLayout
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/backgroundframe">
+
+                <TextView
+                    android:id="@+id/tvname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="400"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/backgroundview"/>
+
+            </FrameLayout>
+            <ImageView
+                android:id="@+id/imvname"
+                android:layout_marginTop="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/user" />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <RadioGroup
+            android:id="@+id/rdg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+        <RadioButton
+                android:layout_marginLeft="40dp"
+                android:id="@+id/rdTai"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:button="@drawable/hinhtai"/>
+            <RadioButton
+                android:id="@+id/rdxiu"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:button="@drawable/hinhxiu"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rdg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rd100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/tien100" />
+        <RadioButton
+            android:id="@+id/rd200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:button="@drawable/tien200"
+            android:layout_marginLeft="5dp"/>
+        <RadioButton
+            android:id="@+id/rd300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/tien300"
+            android:layout_marginLeft="5dp"/>
+        <RadioButton
+            android:id="@+id/rd400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/tien400"
+            android:layout_marginLeft="5dp"/>
+        <RadioButton
+            android:id="@+id/rd500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/tien500"
+            android:layout_marginLeft="5dp"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/xingau1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hinhdongxingau"/>
+        <ImageView
+            android:id="@+id/xingau2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hinhdongxingau"
+            android:layout_marginLeft="5dp"/>
+        <ImageView
+            android:id="@+id/xingau3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/hinhdongxingau"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnGieoXucXac"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/start"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="LacXiNgau"/>
+
+
+
+</LinearLayout>
