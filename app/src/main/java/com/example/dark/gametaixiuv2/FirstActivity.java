@@ -114,6 +114,7 @@ public class FirstActivity extends AppCompatActivity {
         btnPlayGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                money=playerDAO.getMoney(edtUser.getText().toString().trim().toLowerCase());
                 Intent intent =new Intent(FirstActivity.this,MainActivity.class);
                 intent.putExtra("name",edtUser.getText().toString().trim().toLowerCase());
                 intent.putExtra("money",money);
